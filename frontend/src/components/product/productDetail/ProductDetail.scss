@@ -1,0 +1,21 @@
+.product-detail {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  
+  .card {
+    width: 100%;
+    max-width: 1150px;
+    padding: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .detail {
+    & > * {
+      margin-bottom: 1rem;
+    }
+    .badge {
+      color: #df0000;
+    }
+  }
+}

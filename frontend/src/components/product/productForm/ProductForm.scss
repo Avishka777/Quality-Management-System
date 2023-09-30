@@ -1,0 +1,84 @@
+.add-product {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 100%;
+    max-width: 1150px;
+    padding: 1rem;
+    
+  }
+  form {
+    label {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--color-dark);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="file"],
+    select,
+    input[type="password"] {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 100%;
+      border: 1px solid #777;
+      border-radius: 3px;
+      outline: none;
+    }
+  }
+}
+
+.group {
+  border: 1px solid var(--dark-blue);
+  padding: 5px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  flex: 1;
+  margin-right: 10px; 
+}
+
+.input-wrapper input[type="date"] {
+  width: 100%;
+  
+}
+
+.--btn--btn-primary{
+  background-color: #1e6fb1;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  border-radius: 15px;
+  
+}
+
+.--btn--btn-primary:hover {
+  background-color: #CCAF31;
+  color: white;
+  border-radius: 15px;
+}
+

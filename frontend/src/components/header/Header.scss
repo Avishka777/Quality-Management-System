@@ -1,0 +1,48 @@
+.--fw-thin {
+    color: #0D6BC2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+    font-weight: bold;
+  }
+
+  .--color-danger{
+    color: #0D6BC2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+  .header-with-shadow {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6); /* Add your shadow styles here */
+  }
+
+  .--btn--btn-danger{
+    margin-bottom: 50%;
+    border-radius: 4px;
+    background-color: #e06a33; 
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 10px 15px 0px;
+    cursor: pointer;
+  }
+
+
+  .--btn--btn-danger:hover{
+    margin-bottom: 50%;
+    border-radius: 4px;
+    background-color: #1693b3; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 10px 15px 0px;
+    cursor: pointer;
+  }

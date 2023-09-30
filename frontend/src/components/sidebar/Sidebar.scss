@@ -1,0 +1,150 @@
+.layout {
+  display: flex;
+}
+main {
+  width: 100%;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100vh;
+  flex-shrink: 0;
+  background-color: var(--color-white);
+  overflow: auto;
+  color: var(-color-dark);
+  transition: all 0.5s;
+  
+  background-image: linear-gradient(to right, #0D6BC2, #052646);
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-image: linear-gradient(to right, #0D6BC2, #03192e);
+  height: 80px;
+  
+}
+.logo {
+  font-size: 30px;
+  color: var(--color-white);
+}
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 70px;
+  cursor: pointer;
+  color: var(--color-white);
+  transition: all 0.3s;
+}
+
+.bars:hover {
+  color: #fa6e10;
+}
+
+.sidebar-item {
+  padding: 0.75em 1em;
+  display: block;
+  border-bottom: 2px solid #3603032f;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.15s;
+  background-image: linear-gradient(to right, #0D6BC2, #052646);
+}
+
+.s-parent {
+  border-bottom: 1px solid #ccc;
+}
+
+.sidebar-title {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.sidebar-title span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  transition: all 0.5s;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar-title span .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  font-size: 25px;
+  color: var(--color-white);
+}
+
+.sidebar-title .arrow-icon {
+  cursor: pointer;
+  transition: all 0.5s;
+  color: var(--color-white);
+}
+
+.sidebar-item.open > .sidebar-title .arrow-icon {
+  transform: rotate(90deg);
+  
+}
+
+.sidebar-content {
+  padding-top: 0.25em;
+  height: 0;
+  overflow: hidden;
+  
+  
+}
+.sidebar-item.open > .sidebar-content {
+  height: auto;
+}
+
+.s-child {
+  margin-bottom: 1px;
+  margin-top: 1px;
+  box-shadow: 3px 3px 4px px rgba(0, 0, 0, 0.4);
+}
+
+.s-child:hover {
+  border: 0px solid var(--light-red);
+}
+
+a {
+  color: var(--colo-dark);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.active {
+  color: var(--color-primary);
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: rgba(204, 204, 204, 0.4);
+  
+}
+
+.sublink .sidebar-item .sidebar-title {
+  padding-left: 40px;
+}
+
